@@ -2,8 +2,10 @@ var assert = require('assert');
 
 function Raices(a,b,c){
     
-    var R1 = (-b + Math.sqrt(b*b - 4*a*c)) / (2*a);
-    var R2 = (-b - Math.sqrt(b*b - 4*a*c)) / (2*a);
+    var Discriminante = Math.sqrt(b*b-4*a*c);
+    
+    var R1 = (-b + Discriminante) / (2*a);
+    var R2 = (-b - Discriminante) / (2*a);
     
     return [[R1,0],[R2,0]];
     
