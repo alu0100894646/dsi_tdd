@@ -4,23 +4,25 @@ function Raices(a,b,c){
     
     var Discriminante = (b*b-4*a*c);
     var RaizDiscriminante;
+    var R1,R2,RI1,RI2;
+    var DobleA = (2*a);
     
     if(Discriminante > 0)
     {
         RaizDiscriminante = Math.sqrt(Discriminante);
     
-        var R1 = (-b + RaizDiscriminante) / (2*a);
-        var R2 = (-b - RaizDiscriminante) / (2*a);
-        var RI1 = 0;
-        var RI2 = 0;
+        R1 = (-b + RaizDiscriminante) / (DobleA);
+        R2 = (-b - RaizDiscriminante) / (DobleA);
+        RI1 = 0;
+        RI2 = 0;
     }
     else
     {
         RaizDiscriminante = Math.sqrt(-Discriminante);
-        var R1 = -b / (2*a);
-        var R2 = -b / (2*a);
-        var RI1 = RaizDiscriminante / (2*a);
-        var RI2 = -RaizDiscriminante / (2*a);
+        R1 = -b / (DobleA);
+        R2 = -b / (DobleA);
+        RI1 = RaizDiscriminante / (DobleA);
+        RI2 = -RaizDiscriminante / (DobleA);
         
     }
     
