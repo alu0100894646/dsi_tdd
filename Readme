@@ -1,0 +1,7 @@
+Práctica de TDD de DSI.
+
+Falta la carpera de node_modules para poder ejecutarlo correctamente.
+
+Necesitas aparte del node el modulo del assert:
+
+    npm install assert
